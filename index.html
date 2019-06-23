@@ -54,6 +54,25 @@
             <div class="update-mssg"></div>
         </form>
     </div>
+    <!-- firebase connection -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAxcu3Y4AfEnvsYPm4vvW0SgbKeE3xwBHI",
+            authDomain: "real-time-chat-3e02e.firebaseapp.com",
+            databaseURL: "https://real-time-chat-3e02e.firebaseio.com",
+            projectId: "real-time-chat-3e02e",
+            storageBucket: "",
+            messagingSenderId: "780431726550",
+            appId: "1:780431726550:web:5cdbc78e2bbd6be5"
+        };
+        // Initialize Firebase firetsore
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+
     <script src="scripts/chat.js"></script>
     <script src="scripts/ui.js"></script>
     <script src="scripts/app.js"></script>
